@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Tailwind CSS -->
+  <link href="/styles/output.css" rel="stylesheet" />
+  <title>Car USB Charger</title>
+</head>
+
+<body class="bg-gray-800">
+  <div class="bg-white">
+    <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+      <div class="lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8">
+        
+        <!-- LEFT COLUMN: IMAGES with click-to-swap functionality -->
+        <div x-data="{ currentImage: '../Images/Type C fast car Charger Adapter For IPhone to Android 1.avif' }" class="flex flex-col">
+          <!-- Main Image (bound to currentImage) -->
+          <img
+            :src="currentImage"
+            alt="Dashcam main view"
+            class="aspect-square w-full object-cover sm:rounded-lg"
+          />
+
+          <!-- Thumbnails -->
+          <div class="mt-6 w-full max-w-2xl sm:block lg:max-w-none">
+            <div class="grid grid-cols-4 gap-6">
+              <img
+                @click="currentImage = '../Images/Type C fast car Charger Adapter For IPhone to Android 1.avif'"
+                src="../Images/Type C fast car Charger Adapter For IPhone to Android 1.avif"
+                alt="Thumbnail 1"
+                class="h-24 w-full object-cover rounded-md cursor-pointer"
+              />
+              <img
+                @click="currentImage = '../Images/Type C fast car Charger Adapter For IPhone to Android 2.avif'"
+                src="../Images/Type C fast car Charger Adapter For IPhone to Android 2.avif"
+                alt="Thumbnail 2"
+                class="h-24 w-full object-cover rounded-md cursor-pointer"
+              />
+              <img
+                @click="currentImage = '../Images/Type C fast car Charger Adapter For IPhone to Android 3.avif'"
+                src="../Images/Type C fast car Charger Adapter For IPhone to Android 3.avif"
+                alt="Thumbnail 3"
+                class="h-24 w-full object-cover rounded-md cursor-pointer"
+              />
+              <img
+                @click="currentImage = '../Images/Type C fast car Charger Adapter For IPhone to Android 4.avif'"
+                src="../Images/Type C fast car Charger Adapter For IPhone to Android 4.avif"
+                alt="Thumbnail 4"
+                class="h-24 w-full object-cover rounded-md cursor-pointer"
+              />
+              <img
+                @click="currentImage = '../Images/Type C fast car Charger Adapter For IPhone to Android 5.avif'"
+                src="../Images/Type C fast car Charger Adapter For IPhone to Android 5.avif"
+                alt="Thumbnail 4"
+                class="h-24 w-full object-cover rounded-md cursor-pointer"
+              />
+              <img
+                @click="currentImage = '../Images/Type C fast car Charger Adapter For IPhone to Android 6.avif'"
+                src="../Images/Type C fast car Charger Adapter For IPhone to Android 6.avif"
+                alt="Thumbnail 4"
+                class="h-24 w-full object-cover rounded-md cursor-pointer"
+              />
+            </div>
+          </div>
+        </div>
+        
+        <!-- RIGHT COLUMN: PRODUCT INFO -->
+        <div class="mt-10 px-4 sm:mt-16 sm:px-0 lg:mt-0">
+          <h1 class="text-3xl font-bold tracking-tight text-gray-900">Car USB Charger</h1>
+
+          <!-- Price -->
+          <div class="mt-3">
+            <p class="text-3xl tracking-tight text-gray-900">Ksh.2,500</p>
+          </div>
+
+          <!-- Star Rating -->
+          <div class="mt-3 flex items-center">
+            <div class="flex items-center">
+              <!-- 4 filled stars -->
+              <svg class="h-5 w-5 text-indigo-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.343 4.134a1 1 0 00.95.69h4.356c.969 0 1.371 1.24.588 1.81l-3.523 2.562a1 1 0 00-.364 1.118l1.343 4.134c.3.921-.755 1.688-1.54 1.118L10 14.347l-3.804 2.927c-.784.57-1.84-.197-1.54-1.118l1.343-4.134a1 1 0 00-.364-1.118L2.112 9.561c-.783-.57-.38-1.81.588-1.81h4.356a1 1 0 00.95-.69l1.343-4.134z" />
+              </svg>
+              <svg class="h-5 w-5 text-indigo-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.343 4.134a1 1 0 00.95.69h4.356c.969 0 1.371 1.24.588 1.81l-3.523 2.562a1 1 0 00-.364 1.118l1.343 4.134c.3.921-.755 1.688-1.54 1.118L10 14.347l-3.804 2.927c-.784.57-1.84-.197-1.54-1.118l1.343-4.134a1 1 0 00-.364-1.118L2.112 9.561c-.783-.57-.38-1.81.588-1.81h4.356a1 1 0 00.95-.69l1.343-4.134z" />
+              </svg>
+              <svg class="h-5 w-5 text-indigo-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.343 4.134a1 1 0 00.95.69h4.356c.969 0 1.371 1.24.588 1.81l-3.523 2.562a1 1 0 00-.364 1.118l1.343 4.134c.3.921-.755 1.688-1.54 1.118L10 14.347l-3.804 2.927c-.784.57-1.84-.197-1.54-1.118l1.343-4.134a1 1 0 00-.364-1.118L2.112 9.561c-.783-.57-.38-1.81.588-1.81h4.356a1 1 0 00.95-.69l1.343-4.134z" />
+              </svg>
+              <svg class="h-5 w-5 text-indigo-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.343 4.134a1 1 0 00.95.69h4.356c.969 0 1.371 1.24.588 1.81l-3.523 2.562a1 1 0 00-.364 1.118l1.343 4.134c.3.921-.755 1.688-1.54 1.118L10 14.347l-3.804 2.927c-.784.57-1.84-.197-1.54-1.118l1.343-4.134a1 1 0 00-.364-1.118L2.112 9.561c-.783-.57-.38-1.81.588-1.81h4.356a1 1 0 00.95-.69l1.343-4.134z" />
+              </svg>
+              <svg class="h-5 w-5 text-gray-300" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.343 4.134a1 1 0 00.95.69h4.356c.969 0 1.371 1.24.588 1.81l-3.523 2.562a1 1 0 00-.364 1.118l1.343 4.134c.3.921-.755 1.688-1.54 1.118L10 14.347l-3.804 2.927c-.784.57-1.84-.197-1.54-1.118l1.343-4.134a1 1 0 00-.364-1.118L2.112 9.561c-.783-.57-.38-1.81.588-1.81h4.356a1 1 0 00.95-.69l1.343-4.134z" />
+              </svg>
+            </div>
+            <p class="sr-only">4 out of 5 stars</p>
+          </div>
+
+          <!-- DESCRIPTION -->
+          <div class="mt-6 text-base text-gray-700 space-y-6">
+            <p>
+                Experience rapid, reliable charging on the go with our premium USB Car Charger. 
+                Crafted from PC fireproof material for enhanced safety, it features a Type-C and USB port delivering up to 7.5W output, fast charging speeds (120W max), and advanced protection features. 
+                Its sustainable, foldable design with a retractable cable adds convenience to every journey.
+            </p>
+          </div>
+
+          <!-- BUY NOW BUTTON -->
+          <div class="mt-6">
+            <a
+              href="https://wa.me/254722224088?text=hello, I'm%20interested%20in%20the%20Car USB charger"
+              target="_blank"
+              class="flex max-w-xs flex-1 items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full"
+            >
+              Buy Now
+            </a>
+          </div>
+
+          <!-- EXPANDABLE SECTIONS (Alpine.js needed) -->
+          <section aria-labelledby="details-heading" class="mt-12">
+            <h2 id="details-heading" class="sr-only">Additional details</h2>
+            <div class="divide-y divide-gray-200 border-t">
+
+              <!-- Features -->
+              <div x-data="{ open: true }" class="pt-6">
+                <h3>
+                  <button
+                    type="button"
+                    class="group relative flex w-full items-center justify-between py-3 text-left"
+                    @click="open = !open"
+                    :aria-expanded="open"
+                  >
+                    <span class="text-sm font-medium" :class="open ? 'text-indigo-600' : 'text-gray-900'">
+                      Features
+                    </span>
+                    <span class="ml-6 flex items-center">
+                      <svg
+                        x-show="!open"
+                        class="h-6 w-6 text-gray-400 group-hover:text-gray-500"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                      >
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                      </svg>
+                      <svg
+                        x-show="open"
+                        class="h-6 w-6 text-indigo-400 group-hover:text-indigo-500"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                      >
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
+                      </svg>
+                    </span>
+                  </button>
+                </h3>
+                <div class="pb-6" x-show="open">
+                  <ul class="list-disc space-y-1 pl-5 text-sm text-gray-700">
+                    <li>Material – PC fireproof material</li>
+                    <li>Function – Phone charging USB Charger</li>
+                    <li>Port – Type-C, 1 x USB</li>
+                    <li>Output – 7.5W</li>
+                    <li>Protection – Short Circuit Protection, ovp, OTP, OLP, ocp, Low Tension, Over-charging, Overcurrent, Overvoltage</li>
+                    <li>Feature – Sustainable, with retractable cable, Foldable</li>
+                    <li>Keywords – Mobile Phone Fast Charger</li>
+                    <li>Power – 120W Max</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Care -->
+              <div x-data="{ open: false }" class="pt-6">
+                <h3>
+                  <button
+                    type="button"
+                    class="group relative flex w-full items-center justify-between py-3 text-left"
+                    @click="open = !open"
+                    :aria-expanded="open"
+                  >
+                    <span class="text-sm font-medium" :class="open ? 'text-indigo-600' : 'text-gray-900'">
+                      Care
+                    </span>
+                    <span class="ml-6 flex items-center">
+                      <svg
+                        x-show="!open"
+                        class="h-6 w-6 text-gray-400 group-hover:text-gray-500"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                      >
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                      </svg>
+                      <svg
+                        x-show="open"
+                        class="h-6 w-6 text-indigo-400 group-hover:text-indigo-500"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                      >
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
+                      </svg>
+                    </span>
+                  </button>
+                </h3>
+                <div class="pb-6" x-show="open">
+                  <ul class="list-disc space-y-1 pl-5 text-sm text-gray-700">
+                    <li>Wipe the charger and its ports with a soft, dry cloth to remove dust and debris without damaging the PC fireproof material.</li>
+                    <li> When not in use, store the charger in a cool, dry place away from extreme temperatures and moisture to preserve its performance.</li>
+                    <li> Handle the retractable cable carefully—avoid sharp bends or excessive pulling—to maintain its durability and the integrity of the foldable design.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Shipping -->
+              <div x-data="{ open: false }" class="pt-6">
+                <h3>
+                  <button
+                    type="button"
+                    class="group relative flex w-full items-center justify-between py-3 text-left"
+                    @click="open = !open"
+                    :aria-expanded="open"
+                  >
+                    <span class="text-sm font-medium" :class="open ? 'text-indigo-600' : 'text-gray-900'">
+                      Shipping
+                    </span>
+                    <span class="ml-6 flex items-center">
+                      <svg
+                        x-show="!open"
+                        class="h-6 w-6 text-gray-400 group-hover:text-gray-500"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                      >
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                      </svg>
+                      <svg
+                        x-show="open"
+                        class="h-6 w-6 text-indigo-400 group-hover:text-indigo-500"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                      >
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
+                      </svg>
+                    </span>
+                  </button>
+                </h3>
+                <div class="pb-6" x-show="open">
+                  <ul class="list-disc space-y-1 pl-5 text-sm text-gray-700">
+                    <li>Free shipping on orders over $300</li>
+                    <li>International shipping available</li>
+                    <li>Expedited shipping options available</li>
+                    <li>Signature required upon delivery</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Returns -->
+              <div x-data="{ open: false }" class="pt-6">
+                <h3>
+                  <button
+                    type="button"
+                    class="group relative flex w-full items-center justify-between py-3 text-left"
+                    @click="open = !open"
+                    :aria-expanded="open"
+                  >
+                    <span class="text-sm font-medium" :class="open ? 'text-indigo-600' : 'text-gray-900'">
+                      Returns
+                    </span>
+                    <span class="ml-6 flex items-center">
+                      <svg
+                        x-show="!open"
+                        class="h-6 w-6 text-gray-400 group-hover:text-gray-500"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                      >
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                      </svg>
+                      <svg
+                        x-show="open"
+                        class="h-6 w-6 text-indigo-400 group-hover:text-indigo-500"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                      >
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
+                      </svg>
+                    </span>
+                  </button>
+                </h3>
+                <div class="pb-6" x-show="open">
+                  <ul class="list-disc space-y-1 pl-5 text-sm text-gray-700">
+                    <li>Easy return requests within 10 days</li>
+                    <li>Pre-paid shipping label included</li>
+                    <li>Hassle-free return process</li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Alpine.js for interactive components -->
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+</body>
+</html>
